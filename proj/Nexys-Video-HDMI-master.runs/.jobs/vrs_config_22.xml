@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="hdmi_microblaze_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_rst_mig_7series_0_100M_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_rst_mig_7series_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_xbar_1_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_lmb_bram_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_axi_dynclk_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_axi_dynclk_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_axi_timer_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_v_tc_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_v_tc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_xlconstant_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_ilmb_v10_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_microblaze_0_xlconcat_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_microblaze_0_xlconcat_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_axi_vdma_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_axi_vdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_rgb2dvi_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_rgb2dvi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_axi_uartlite_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_axi_gpio_video_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_axi_gpio_video_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_mdm_1_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_dlmb_v10_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_v_axi4s_vid_out_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_v_axi4s_vid_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_xbar_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_mig_7series_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_mig_7series_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_microblaze_0_axi_intc_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_microblaze_0_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_clk_wiz_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_axi_vdma_1_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_axi_vdma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_axi_iic_0_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_rst_clk_wiz_0_25M_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_rst_clk_wiz_0_25M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_auto_cc_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_auto_rs_w_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_auto_rs_w_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_auto_us_2_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_auto_us_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_m00_regslice_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_m00_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_auto_ds_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_auto_ds_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_s02_regslice_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_s02_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_auto_us_1_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_auto_us_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_auto_rs_w_1_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_auto_rs_w_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_s01_regslice_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_s01_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_auto_rs_w_2_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_auto_rs_w_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_s03_regslice_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_s03_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="hdmi_s00_regslice_0_synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_s00_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="hdmi_microblaze_0_0_synth_1"/>
+		<Parent Id="hdmi_rst_mig_7series_0_100M_0_synth_1"/>
+		<Parent Id="hdmi_xbar_1_synth_1"/>
+		<Parent Id="hdmi_lmb_bram_0_synth_1"/>
+		<Parent Id="hdmi_axi_dynclk_0_0_synth_1"/>
+		<Parent Id="hdmi_axi_timer_0_0_synth_1"/>
+		<Parent Id="hdmi_v_tc_0_0_synth_1"/>
+		<Parent Id="hdmi_xlconstant_0_0_synth_1"/>
+		<Parent Id="hdmi_ilmb_v10_0_synth_1"/>
+		<Parent Id="hdmi_microblaze_0_xlconcat_0_synth_1"/>
+		<Parent Id="hdmi_axi_vdma_0_0_synth_1"/>
+		<Parent Id="hdmi_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="hdmi_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="hdmi_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="hdmi_axi_gpio_video_0_synth_1"/>
+		<Parent Id="hdmi_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="hdmi_mdm_1_0_synth_1"/>
+		<Parent Id="hdmi_dlmb_v10_0_synth_1"/>
+		<Parent Id="hdmi_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="hdmi_xbar_0_synth_1"/>
+		<Parent Id="hdmi_mig_7series_0_0_synth_1"/>
+		<Parent Id="hdmi_microblaze_0_axi_intc_0_synth_1"/>
+		<Parent Id="hdmi_clk_wiz_0_0_synth_1"/>
+		<Parent Id="hdmi_axi_vdma_1_0_synth_1"/>
+		<Parent Id="hdmi_axi_iic_0_0_synth_1"/>
+		<Parent Id="hdmi_rst_clk_wiz_0_25M_0_synth_1"/>
+		<Parent Id="hdmi_auto_cc_0_synth_1"/>
+		<Parent Id="hdmi_auto_rs_w_0_synth_1"/>
+		<Parent Id="hdmi_auto_us_2_synth_1"/>
+		<Parent Id="hdmi_m00_regslice_0_synth_1"/>
+		<Parent Id="hdmi_auto_ds_0_synth_1"/>
+		<Parent Id="hdmi_s02_regslice_0_synth_1"/>
+		<Parent Id="hdmi_auto_us_1_synth_1"/>
+		<Parent Id="hdmi_auto_us_0_synth_1"/>
+		<Parent Id="hdmi_auto_rs_w_1_synth_1"/>
+		<Parent Id="hdmi_s01_regslice_0_synth_1"/>
+		<Parent Id="hdmi_auto_rs_w_2_synth_1"/>
+		<Parent Id="hdmi_s03_regslice_0_synth_1"/>
+		<Parent Id="hdmi_s00_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="hdmi_microblaze_0_0_synth_1"/>
+		<Parent Id="hdmi_rst_mig_7series_0_100M_0_synth_1"/>
+		<Parent Id="hdmi_xbar_1_synth_1"/>
+		<Parent Id="hdmi_lmb_bram_0_synth_1"/>
+		<Parent Id="hdmi_axi_dynclk_0_0_synth_1"/>
+		<Parent Id="hdmi_axi_timer_0_0_synth_1"/>
+		<Parent Id="hdmi_v_tc_0_0_synth_1"/>
+		<Parent Id="hdmi_xlconstant_0_0_synth_1"/>
+		<Parent Id="hdmi_ilmb_v10_0_synth_1"/>
+		<Parent Id="hdmi_microblaze_0_xlconcat_0_synth_1"/>
+		<Parent Id="hdmi_axi_vdma_0_0_synth_1"/>
+		<Parent Id="hdmi_rgb2dvi_0_0_synth_1"/>
+		<Parent Id="hdmi_axi_uartlite_0_0_synth_1"/>
+		<Parent Id="hdmi_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="hdmi_axi_gpio_video_0_synth_1"/>
+		<Parent Id="hdmi_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="hdmi_mdm_1_0_synth_1"/>
+		<Parent Id="hdmi_dlmb_v10_0_synth_1"/>
+		<Parent Id="hdmi_v_axi4s_vid_out_0_0_synth_1"/>
+		<Parent Id="hdmi_xbar_0_synth_1"/>
+		<Parent Id="hdmi_mig_7series_0_0_synth_1"/>
+		<Parent Id="hdmi_microblaze_0_axi_intc_0_synth_1"/>
+		<Parent Id="hdmi_clk_wiz_0_0_synth_1"/>
+		<Parent Id="hdmi_axi_vdma_1_0_synth_1"/>
+		<Parent Id="hdmi_axi_iic_0_0_synth_1"/>
+		<Parent Id="hdmi_rst_clk_wiz_0_25M_0_synth_1"/>
+		<Parent Id="hdmi_auto_cc_0_synth_1"/>
+		<Parent Id="hdmi_auto_rs_w_0_synth_1"/>
+		<Parent Id="hdmi_auto_us_2_synth_1"/>
+		<Parent Id="hdmi_m00_regslice_0_synth_1"/>
+		<Parent Id="hdmi_auto_ds_0_synth_1"/>
+		<Parent Id="hdmi_s02_regslice_0_synth_1"/>
+		<Parent Id="hdmi_auto_us_1_synth_1"/>
+		<Parent Id="hdmi_auto_us_0_synth_1"/>
+		<Parent Id="hdmi_auto_rs_w_1_synth_1"/>
+		<Parent Id="hdmi_s01_regslice_0_synth_1"/>
+		<Parent Id="hdmi_auto_rs_w_2_synth_1"/>
+		<Parent Id="hdmi_s03_regslice_0_synth_1"/>
+		<Parent Id="hdmi_s00_regslice_0_synth_1"/>
+	</Run>
+</Runs>
+

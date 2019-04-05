@@ -1,0 +1,1197 @@
+
+*** Running vivado
+    with args -log hdmi_motion_detection_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_motion_detection_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'C:/Users/Tristan/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source hdmi_motion_detection_0_0.tcl -notrace
+WARNING: [Board 49-91] Board repository path 'C:/Users/Tristan/Documents/Tools/vivado-boards-master/vivado-boards/new/board_files' does not exist, it will not be used to search board files.
+Command: synth_design -top hdmi_motion_detection_0_0 -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12252 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 425.141 ; gain = 104.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hdmi_motion_detection_0_0' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ip/hdmi_motion_detection_0_0/synth/hdmi_motion_detection_0_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'motion_v1_0' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:3]
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+	Parameter resetS bound to: 0 - type: integer 
+	Parameter initRead1 bound to: 1 - type: integer 
+	Parameter read1 bound to: 2 - type: integer 
+	Parameter initRead2 bound to: 3 - type: integer 
+	Parameter read2 bound to: 4 - type: integer 
+	Parameter waitforClear bound to: 5 - type: integer 
+	Parameter delayBetweenFrames bound to: 7 - type: integer 
+	Parameter initRead3 bound to: 8 - type: integer 
+	Parameter overlayS bound to: 9 - type: integer 
+	Parameter overlayCompleteS bound to: 10 - type: integer 
+	Parameter initS2MMClearS bound to: 11 - type: integer 
+	Parameter initS2MMClearS2 bound to: 12 - type: integer 
+	Parameter transitS bound to: 13 - type: integer 
+	Parameter readClearS bound to: 14 - type: integer 
+	Parameter readClearS2 bound to: 15 - type: integer 
+	Parameter transitS2 bound to: 16 - type: integer 
+	Parameter transitS3 bound to: 17 - type: integer 
+	Parameter read_transfer_length_offst bound to: 32'b00000000000000000000000000101000 
+	Parameter read_addr_offset bound to: 32'b00000000000000000000000000011000 
+	Parameter write_addr_offset bound to: 32'b00000000000000000000000001001000 
+	Parameter write_enable bound to: 32'b00000000000000000000000000110000 
+	Parameter write_length_offset bound to: 32'b00000000000000000000000001011000 
+INFO: [Synth 8-6157] synthesizing module 'write_DMA' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:1264]
+	Parameter resetS bound to: 5'b00000 
+	Parameter initRead1 bound to: 5'b00001 
+	Parameter read1 bound to: 5'b00010 
+	Parameter initRead2 bound to: 5'b00011 
+	Parameter read2 bound to: 5'b00100 
+	Parameter waitforClear bound to: 5'b00101 
+	Parameter delayBetweenFrames bound to: 5'b00111 
+	Parameter initRead3 bound to: 5'b01000 
+	Parameter overlayS bound to: 5'b01001 
+	Parameter overlayCompleteS bound to: 5'b01010 
+	Parameter initS2MMClearS bound to: 5'b01011 
+	Parameter initS2MMClearS2 bound to: 5'b01100 
+	Parameter transitS bound to: 5'b01101 
+	Parameter readClearS bound to: 5'b01110 
+	Parameter readClearS2 bound to: 5'b01111 
+	Parameter transitS2 bound to: 5'b10000 
+	Parameter transitS3 bound to: 5'b10001 
+WARNING: [Synth 8-6104] Input port 'M_AXI_BREADY' has an internal driver [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:1297]
+INFO: [Synth 8-6155] done synthesizing module 'write_DMA' (1#1) [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:1264]
+WARNING: [Synth 8-324] index 768 out of range [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+WARNING: [Synth 8-324] index 768 out of range [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:937]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:1099]
+WARNING: [Synth 8-6014] Unused sequential element box_diff_reg was removed.  [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:934]
+WARNING: [Synth 8-3848] Net M_AXI_ARADDR in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:31]
+WARNING: [Synth 8-3848] Net M_AXI_ARVALID in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:32]
+WARNING: [Synth 8-3848] Net M_AXI_RREADY in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:38]
+WARNING: [Synth 8-3848] Net w3_bready in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:621]
+WARNING: [Synth 8-3848] Net w2_bready in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:594]
+WARNING: [Synth 8-3848] Net w1_bready in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:534]
+WARNING: [Synth 8-3848] Net clear_bready in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:649]
+WARNING: [Synth 8-3848] Net clear_bready2 in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:653]
+WARNING: [Synth 8-3848] Net clear_bready3 in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:657]
+WARNING: [Synth 8-3848] Net clear_bready4 in module/entity motion_v1_0 does not have driver. [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:661]
+INFO: [Synth 8-6155] done synthesizing module 'motion_v1_0' (2#1) [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_motion_detection_0_0' (3#1) [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ip/hdmi_motion_detection_0_0/synth/hdmi_motion_detection_0_0.v:59]
+WARNING: [Synth 8-3331] design write_DMA has unconnected port M_AXI_BRESP
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[31]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[30]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[29]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[28]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[27]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[26]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[25]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[24]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[23]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[22]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[21]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[20]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[19]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[18]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[17]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[16]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[15]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[14]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[13]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[12]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[11]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[10]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[9]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[8]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[7]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[6]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[5]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[4]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[3]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[2]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[1]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARADDR[0]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARVALID
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RREADY
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_ARREADY
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[31]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[30]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[29]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[28]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[27]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[26]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[25]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[24]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[23]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[22]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[21]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[20]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[19]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[18]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[17]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[16]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[15]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[14]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[13]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[12]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[11]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[10]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[9]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[8]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[7]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[6]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[5]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[4]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[3]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[2]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[1]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RDATA[0]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port M_AXI_RVALID
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port S_AXI_TKEEP[3]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port S_AXI_TKEEP[2]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port S_AXI_TKEEP[1]
+WARNING: [Synth 8-3331] design motion_v1_0 has unconnected port S_AXI_TKEEP[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 678.660 ; gain = 357.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin write_1:M_AXI_BREADY to constant 0 [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:569]
+WARNING: [Synth 8-3295] tying undriven pin write_2:M_AXI_BREADY to constant 0 [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:596]
+WARNING: [Synth 8-3295] tying undriven pin write_3:M_AXI_BREADY to constant 0 [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:623]
+WARNING: [Synth 8-3295] tying undriven pin write_clear:M_AXI_BREADY to constant 0 [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:663]
+WARNING: [Synth 8-3295] tying undriven pin write_clear2:M_AXI_BREADY to constant 0 [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:686]
+WARNING: [Synth 8-3295] tying undriven pin write_clear3:M_AXI_BREADY to constant 0 [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:710]
+WARNING: [Synth 8-3295] tying undriven pin write_clear4:M_AXI_BREADY to constant 0 [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:733]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 678.660 ; gain = 357.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 678.660 ; gain = 357.602
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1270.242 ; gain = 42.215
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:33 ; elapsed = 00:01:50 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:33 ; elapsed = 00:01:50 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:50 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[767]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[766]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[765]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[764]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[763]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[762]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[761]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[760]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[759]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[758]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[757]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[756]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[755]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[754]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[753]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[752]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[751]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[750]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[749]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[748]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[747]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[746]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[745]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[744]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[743]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[742]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[741]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[740]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[739]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[738]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[737]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[736]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[735]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[734]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[733]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[732]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[731]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[730]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[729]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[728]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[727]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[726]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[725]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[724]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[723]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[722]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[721]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[720]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[719]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[718]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[717]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[716]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[715]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[714]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[713]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[712]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[711]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[710]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[709]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[708]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[707]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[706]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[705]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[704]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[703]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[702]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[701]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[700]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[699]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[698]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[697]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[696]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[695]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[694]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[693]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[692]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[691]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[690]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[689]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[688]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[687]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[686]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[685]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[684]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[683]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[682]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[681]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[680]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[679]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[678]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[677]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[676]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[675]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[674]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[673]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[672]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[671]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[670]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[669]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "gray1_sub_reg[668]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "transfer_length_offset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_offset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "diff_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clearDelay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "overlayDelayCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clearDelay2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clearDelay3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clearDelay4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delayCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delayCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "transfer_length_offset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_offset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "diff_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clearDelay" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "overlayDelayCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clearDelay2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clearDelay3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clearDelay4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delayCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delayCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "S_AXI_S2MM_TDATA" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:1101]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:35 ; elapsed = 00:03:01 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |muxpart__1        |           1|     24544|
+|2     |motion_v1_0__GB1  |           1|     11968|
+|3     |motion_v1_0__GB2  |           1|         2|
+|4     |motion_v1_0__GB3  |           1|     23040|
+|5     |motion_v1_0__GB4  |           1|     15246|
+|6     |motion_v1_0__GB5  |           1|     39691|
+|7     |motion_v1_0__GB6  |           1|     30304|
+|8     |motion_v1_0__GB7  |           1|      7616|
+|9     |motion_v1_0__GB8  |           1|      9655|
+|10    |motion_v1_0__GB9  |           1|     11680|
+|11    |motion_v1_0__GB10 |           1|     14724|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   3 Input     32 Bit       Adders := 4     
+	  24 Input     13 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 31    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 62    
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 31    
+	  11 Input     32 Bit        Muxes := 9     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 880   
+	  17 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module write_DMA__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module write_DMA__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module write_DMA__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module write_DMA__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module write_DMA__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module write_DMA__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module write_DMA 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module motion_v1_0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   3 Input     32 Bit       Adders := 4     
+	  24 Input     13 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 31    
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 31    
+	  11 Input     32 Bit        Muxes := 9     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 831   
+	  17 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3917] design hdmi_motion_detection_0_0 has port S_AXI_S2MM_TKEEP[3] driven by constant 1
+INFO: [Synth 8-3917] design hdmi_motion_detection_0_0 has port S_AXI_S2MM_TKEEP[2] driven by constant 1
+INFO: [Synth 8-3917] design hdmi_motion_detection_0_0 has port S_AXI_S2MM_TKEEP[1] driven by constant 1
+INFO: [Synth 8-3917] design hdmi_motion_detection_0_0 has port S_AXI_S2MM_TKEEP[0] driven by constant 1
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[31]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[30]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[29]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[28]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[27]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[26]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[25]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[24]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[23]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[22]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[21]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[20]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[19]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[18]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[17]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[16]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[15]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[14]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[13]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[12]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[11]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[10]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[9]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[8]
+WARNING: [Synth 8-3331] design hdmi_motion_detection_0_0 has unconnected port M_AXI_ARADDR[7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][31]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][30]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][29]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][28]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][27]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][26]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][25]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][24]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][23]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][22]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][21]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][20]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][19]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][18]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][17]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][16]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][15]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][14]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][13]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][12]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][11]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][10]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][9]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][8]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][7]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][6]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][5]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][4]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][3]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][2]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][1]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[71][0]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][31]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][30]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][29]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][28]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][27]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][26]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][25]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][24]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][23]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][22]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][21]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][20]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][19]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][18]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][17]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][16]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][15]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'insti_6/gray1_sub_reg[134][14]__0/Q' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:936]
+INFO: [Common 17-14] Message 'Synth 8-5559' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'insti_7/axi_bresp_reg[0]' (FDRE) to 'insti_7/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_7/\axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'insti_7/axi_rresp_reg[0]' (FDRE) to 'insti_7/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_7/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[0]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[1]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[2]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[3]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[4]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[5]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[6]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[7]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[8]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[9]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[10]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[11]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[12]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[13]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[14]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[15]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[16]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[17]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[18]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[19]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[20]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[21]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[22]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[23]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[24]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[25]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[26]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[27]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[28]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[29]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-3886] merging instance 'S_AXI_S2MM_TDATA_reg[30]' (FDRE) to 'S_AXI_S2MM_TDATA_reg[31]'
+INFO: [Synth 8-4471] merging register 'row_count_reg[31:0]' into 'row_count_reg[31:0]' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:894]
+INFO: [Synth 8-4471] merging register 'column_count_reg[31:0]' into 'column_count_reg[31:0]' [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:888]
+WARNING: [Synth 8-6014] Unused sequential element row_count_reg was removed.  [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:894]
+WARNING: [Synth 8-6014] Unused sequential element column_count_reg was removed.  [c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ipshared/b282/src/motion_detection.v:888]
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3917] design motion_v1_0__GB5 has port grayResult[12] driven by constant 0
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (diff_valid_reg__0)
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[2]' (FDR) to 'slv_reg6_reg[3]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[3]' (FDR) to 'slv_reg6_reg[4]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[4]' (FDR) to 'slv_reg6_reg[5]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[5]' (FD) to 'slv_reg11_reg[6]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[5]' (FDR) to 'slv_reg6_reg[6]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[6]' (FD) to 'slv_reg11_reg[7]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[6]' (FDR) to 'slv_reg6_reg[7]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[7]' (FD) to 'slv_reg11_reg[8]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[7]' (FDR) to 'slv_reg6_reg[8]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[8]' (FD) to 'slv_reg11_reg[9]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[8]' (FDR) to 'slv_reg6_reg[9]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[9]' (FD) to 'slv_reg11_reg[10]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[9]' (FDR) to 'slv_reg6_reg[10]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[10]' (FD) to 'slv_reg11_reg[11]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[10]' (FDR) to 'slv_reg6_reg[11]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[11]' (FD) to 'slv_reg11_reg[12]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[11]' (FDR) to 'slv_reg6_reg[12]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[12]' (FD) to 'slv_reg11_reg[13]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[12]' (FDR) to 'slv_reg6_reg[13]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[13]' (FD) to 'slv_reg11_reg[14]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[13]' (FDR) to 'slv_reg6_reg[14]'
+INFO: [Synth 8-3886] merging instance 'slv_reg11_reg[14]' (FD) to 'slv_reg11_reg[15]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[14]' (FDR) to 'slv_reg6_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_reg11_reg[15] )
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[15]' (FDR) to 'slv_reg6_reg[16]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[16]' (FDR) to 'slv_reg6_reg[17]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[17]' (FDR) to 'slv_reg6_reg[18]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[18]' (FDR) to 'slv_reg6_reg[19]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[19]' (FDR) to 'slv_reg6_reg[20]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[20]' (FDR) to 'slv_reg6_reg[21]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[21]' (FDR) to 'slv_reg6_reg[22]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[22]' (FDR) to 'slv_reg6_reg[23]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[23]' (FDR) to 'slv_reg6_reg[24]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[24]' (FDR) to 'slv_reg6_reg[25]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[25]' (FDR) to 'slv_reg6_reg[26]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[26]' (FDR) to 'slv_reg6_reg[27]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[27]' (FDR) to 'slv_reg6_reg[28]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[28]' (FDR) to 'slv_reg6_reg[29]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[29]' (FDR) to 'slv_reg6_reg[30]'
+INFO: [Synth 8-3886] merging instance 'slv_reg6_reg[30]' (FDR) to 'slv_reg6_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_reg6_reg[31] )
+INFO: [Synth 8-3886] merging instance 'addr_offset_reg[0]' (FDE) to 'addr_offset_reg[1]'
+INFO: [Synth 8-3886] merging instance 'addr_offset_reg[1]' (FDE) to 'addr_offset_reg[2]'
+INFO: [Synth 8-3886] merging instance 'addr_offset_reg[2]' (FDE) to 'addr_offset_reg[5]'
+INFO: [Synth 8-3886] merging instance 'addr_offset_reg[4]' (FDE) to 'transfer_length_offset_reg[5]'
+INFO: [Synth 8-3886] merging instance 'addr_offset_reg[5]' (FDE) to 'transfer_length_offset_reg[0]'
+INFO: [Synth 8-3886] merging instance 'transfer_length_offset_reg[0]' (FDE) to 'transfer_length_offset_reg[1]'
+INFO: [Synth 8-3886] merging instance 'transfer_length_offset_reg[1]' (FDE) to 'transfer_length_offset_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\transfer_length_offset_reg[2] )
+INFO: [Synth 8-3886] merging instance 'transfer_length_offset_reg[4]' (FDE) to 'transfer_length_offset_reg[6]'
+INFO: [Synth 8-3886] merging instance 'addr_offset_reg[3]' (FDE) to 'transfer_length_offset_reg[3]'
+INFO: [Synth 8-3886] merging instance 'addr_offset_reg[6]' (FDE) to 'transfer_length_offset_reg[6]'
+INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5559' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][0]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][1]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][2]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][3]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][4]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][5]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][6]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][7]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][8]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][9]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][10]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][11]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][12]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][13]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][14]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][15]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][16]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][17]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][18]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][19]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][20]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][21]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][22]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][23]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][24]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][25]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][26]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][27]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][28]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][29]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][30]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gray1_sub_reg[3][31]__0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (S_AXI_S2MM_TLAST_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:03 ; elapsed = 00:05:14 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |muxpart__1        |           1|     24544|
+|2     |motion_v1_0__GB1  |           1|         0|
+|3     |motion_v1_0__GB2  |           1|         2|
+|4     |motion_v1_0__GB3  |           1|         0|
+|5     |motion_v1_0__GB4  |           1|       686|
+|6     |motion_v1_0__GB5  |           1|      7720|
+|7     |motion_v1_0__GB6  |           1|     23013|
+|8     |motion_v1_0__GB8  |           1|       120|
+|9     |motion_v1_0__GB9  |           1|        32|
+|10    |motion_v1_0__GB10 |           1|        25|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:25 ; elapsed = 00:05:38 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'insti_9/M_AXI_WSTRB_reg[0]' (FD) to 'insti_9/M_AXI_WSTRB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'insti_9/M_AXI_WSTRB_reg[1]' (FD) to 'insti_9/M_AXI_WSTRB_reg[2]'
+INFO: [Synth 8-3886] merging instance 'insti_9/M_AXI_WSTRB_reg[2]' (FD) to 'insti_9/M_AXI_WSTRB_reg[3]'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:27 ; elapsed = 00:05:41 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |motion_v1_0__GB4  |           1|       104|
+|2     |motion_v1_0__GB5  |           1|      4756|
+|3     |motion_v1_0__GB6  |           1|       390|
+|4     |motion_v1_0__GB8  |           1|       120|
+|5     |motion_v1_0__GB9  |           1|        32|
+|6     |motion_v1_0__GB10 |           1|        21|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3332] Sequential element (inst/diff_valid_reg) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][31]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][30]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][29]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][28]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][27]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][26]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][25]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][24]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][23]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][22]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][21]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][20]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][19]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][18]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][17]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][16]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][15]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][14]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][13]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][12]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][11]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][10]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][9]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][8]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][7]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][6]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][5]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][4]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][3]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][2]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][1]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][0]__0) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][31]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][30]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][29]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][28]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][27]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][26]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][25]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][24]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][23]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][22]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][21]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][20]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][19]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][18]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][17]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][16]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][15]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][14]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][13]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][12]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][11]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][10]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][9]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][8]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][7]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][6]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][5]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][4]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][3]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][2]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][1]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/gray1_sub_reg[177][0]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[0]' (FDRE) to 'inst/currentMaxDiff_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[1]' (FDRE) to 'inst/currentMaxDiff_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[2]' (FDRE) to 'inst/currentMaxDiff_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[3]' (FDRE) to 'inst/currentMaxDiff_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[4]' (FDRE) to 'inst/currentMaxDiff_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[5]' (FDRE) to 'inst/currentMaxDiff_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[6]' (FDRE) to 'inst/currentMaxDiff_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[7]' (FDRE) to 'inst/currentMaxDiff_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[8]' (FDRE) to 'inst/currentMaxDiff_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[9]' (FDRE) to 'inst/currentMaxDiff_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[10]' (FDRE) to 'inst/currentMaxDiff_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[11]' (FDRE) to 'inst/currentMaxDiff_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[12]' (FDRE) to 'inst/currentMaxDiff_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[13]' (FDRE) to 'inst/currentMaxDiff_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/currentMaxDiff_reg[14]' (FDRE) to 'inst/currentMaxDiff_reg[15]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/currentMaxDiff_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/slv_reg10_reg[31] )
+INFO: [Synth 8-3332] Sequential element (inst/currentMaxDiff_reg[31]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[31]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[30]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[29]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[28]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[27]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[26]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[25]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[24]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[23]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[22]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[21]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[20]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[19]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[18]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[17]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[16]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[15]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[14]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[13]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[12]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[11]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[10]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[9]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[8]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[7]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[6]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[5]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[4]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[3]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[2]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[1]) is unused and will be removed from module hdmi_motion_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/slv_reg10_reg[0]) is unused and will be removed from module hdmi_motion_detection_0_0.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:30 ; elapsed = 00:05:44 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:33 ; elapsed = 00:05:47 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:33 ; elapsed = 00:05:47 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:33 ; elapsed = 00:05:47 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:33 ; elapsed = 00:05:47 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:33 ; elapsed = 00:05:47 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:33 ; elapsed = 00:05:47 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   175|
+|2     |LUT1   |    21|
+|3     |LUT2   |   144|
+|4     |LUT3   |    82|
+|5     |LUT4   |   260|
+|6     |LUT5   |   226|
+|7     |LUT6   |   270|
+|8     |FDRE   |   975|
+|9     |FDSE   |     5|
+|10    |LD     |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+------------+------+
+|      |Instance         |Module      |Cells |
++------+-----------------+------------+------+
+|1     |top              |            |  2163|
+|2     |  inst           |motion_v1_0 |  2163|
+|3     |    write_1      |write_DMA   |    61|
+|4     |    write_2      |write_DMA_0 |    11|
+|5     |    write_3      |write_DMA_1 |    18|
+|6     |    write_clear  |write_DMA_2 |    11|
+|7     |    write_clear2 |write_DMA_3 |    14|
+|8     |    write_clear3 |write_DMA_4 |    18|
+|9     |    write_clear4 |write_DMA_5 |    12|
++------+-----------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:33 ; elapsed = 00:05:47 . Memory (MB): peak = 1270.242 ; gain = 949.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 25835 critical warnings and 85 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:08 ; elapsed = 00:04:35 . Memory (MB): peak = 1270.242 ; gain = 357.602
+Synthesis Optimization Complete : Time (s): cpu = 00:04:34 ; elapsed = 00:05:49 . Memory (MB): peak = 1270.242 ; gain = 949.184
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'hdmi_motion_detection_0_0' is not ideal for floorplanning, since the cellview 'motion_v1_0' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LD => LDCE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+437 Infos, 128 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:38 ; elapsed = 00:05:54 . Memory (MB): peak = 1270.242 ; gain = 961.730
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_motion_detection_0_0_synth_1/hdmi_motion_detection_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.srcs/sources_1/bd/hdmi/ip/hdmi_motion_detection_0_0/hdmi_motion_detection_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Tristan/Documents/Nexys-Video-HDMI-master/proj/Nexys-Video-HDMI-master.runs/hdmi_motion_detection_0_0_synth_1/hdmi_motion_detection_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hdmi_motion_detection_0_0_utilization_synth.rpt -pb hdmi_motion_detection_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 1270.242 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 26 12:46:02 2019...

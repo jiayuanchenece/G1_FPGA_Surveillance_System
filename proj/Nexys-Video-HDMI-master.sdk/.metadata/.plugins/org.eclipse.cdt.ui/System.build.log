@@ -1,0 +1,112 @@
+17:03:23 **** Build of configuration Release for project System ****
+make all 
+'Building file: ../src/TimerControl/timer_ps.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/TimerControl/timer_ps.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/TimerControl/timer_ps.d" -MT"src/TimerControl/timer_ps.o" -o "src/TimerControl/timer_ps.o" "../src/TimerControl/timer_ps.c"
+'Finished building: ../src/TimerControl/timer_ps.c'
+' '
+'Building file: ../src/Platform/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/Platform/platform.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Platform/platform.d" -MT"src/Platform/platform.o" -o "src/Platform/platform.o" "../src/Platform/platform.c"
+'Finished building: ../src/Platform/platform.c'
+' '
+'Building file: ../src/Platform/platform_mb.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/Platform/platform_mb.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Platform/platform_mb.d" -MT"src/Platform/platform_mb.o" -o "src/Platform/platform_mb.o" "../src/Platform/platform_mb.c"
+'Finished building: ../src/Platform/platform_mb.c'
+' '
+'Building file: ../src/MotionDetection/motion_detection.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/MotionDetection/motion_detection.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/MotionDetection/motion_detection.d" -MT"src/MotionDetection/motion_detection.o" -o "src/MotionDetection/motion_detection.o" "../src/MotionDetection/motion_detection.c"
+'Finished building: ../src/MotionDetection/motion_detection.c'
+' '
+'Building file: ../src/InterruptControl/intc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/InterruptControl/intc.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/InterruptControl/intc.d" -MT"src/InterruptControl/intc.o" -o "src/InterruptControl/intc.o" "../src/InterruptControl/intc.c"
+'Finished building: ../src/InterruptControl/intc.c'
+' '
+'Building file: ../src/DynamicClockControl/dynclk.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/DynamicClockControl/dynclk.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/DynamicClockControl/dynclk.d" -MT"src/DynamicClockControl/dynclk.o" -o "src/DynamicClockControl/dynclk.o" "../src/DynamicClockControl/dynclk.c"
+'Finished building: ../src/DynamicClockControl/dynclk.c'
+' '
+'Building file: ../src/DisplayControl/display_ctrl.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/DisplayControl/display_ctrl.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/DisplayControl/display_ctrl.d" -MT"src/DisplayControl/display_ctrl.o" -o "src/DisplayControl/display_ctrl.o" "../src/DisplayControl/display_ctrl.c"
+'Finished building: ../src/DisplayControl/display_ctrl.c'
+' '
+'Building file: ../src/CameraControl/camera_ctrl.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/CameraControl/camera_ctrl.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/CameraControl/camera_ctrl.d" -MT"src/CameraControl/camera_ctrl.o" -o "src/CameraControl/camera_ctrl.o" "../src/CameraControl/camera_ctrl.c"
+../src/CameraControl/camera_ctrl.c: In function 'camera_dma_stop':
+../src/CameraControl/camera_ctrl.c:373:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+'Finished building: ../src/CameraControl/camera_ctrl.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:201:15: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+       sprintf(outBuff,"EOV");
+               ^~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/Platform/platform.h:37,
+                 from ../src/main.c:16:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:225:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/main.c:244:33: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+         unsigned int location = (unsigned int *)(MOTION_BASE_ADDR + MD_LOCATION);
+                                 ^
+../src/main.c:246:22: warning: unused variable 'newY' [-Wunused-variable]
+         unsigned int newY = (0xffff0000 & location) >> 16;
+                      ^~~~
+../src/main.c:245:22: warning: unused variable 'newX' [-Wunused-variable]
+         unsigned int newX = 0x0000ffff & location;
+                      ^~~~
+../src/main.c: In function 'send_image':
+../src/main.c:538:6: warning: unused variable 'total_frag' [-Wunused-variable]
+  int total_frag = fileSize / (MAX_PACKET_LENGTH - headerSize) + 1;
+      ^~~~~~~~~~
+../src/main.c: In function 'send_image_to_server':
+../src/main.c:581:11: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+   sprintf(headerBuff,"%.3u",frag_no);
+           ^~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/Platform/platform.h:37,
+                 from ../src/main.c:16:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:225:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+../src/main.c:628:10: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  sprintf(outBuff,"EOF");
+          ^~~~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/Platform/platform.h:37,
+                 from ../src/main.c:16:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:225:5: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ int _EXFUN(sprintf, (char *__restrict, const char *__restrict, ...)
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../logo.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"logo.o" -I../../System_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"logo.d" -MT"logo.o" -o "logo.o" "../logo.c"
+'Finished building: ../logo.c'
+' '
+'Building target: System.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../System_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "System.elf"  ./src/TimerControl/timer_ps.o  ./src/Platform/platform.o ./src/Platform/platform_mb.o  ./src/MotionDetection/motion_detection.o  ./src/InterruptControl/intc.o  ./src/DynamicClockControl/dynclk.o  ./src/DisplayControl/display_ctrl.o  ./src/CameraControl/camera_ctrl.o  ./src/main.o  ./logo.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: System.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size System.elf  |tee "System.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 162700	  14428	3522784	3699912	 3874c8	System.elf
+'Finished building: System.elf.size'
+' '
+
+17:03:28 Build Finished (took 4s.311ms)
+
