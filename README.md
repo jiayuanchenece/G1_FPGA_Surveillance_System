@@ -6,6 +6,9 @@
 G1_FPGA_Surveillance_System
   ┣ docs                                      # Project documentations
   ┣ host_server                               # Remote server source
+  ┃ ┣ generate20.py                           # Test pattern image generator
+  ┃ ┣ image2coe_v2.py                         # image to COE file converter
+  ┃ ┗ server.py                               # Python server
   ┣ src                                       # Vivado source files
   ┃ ┣ new_ip                                  # Custom motion detection IP
   ┃ ┣ proj                                    # Vivado project
