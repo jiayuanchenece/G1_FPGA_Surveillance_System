@@ -1,5 +1,10 @@
 # G1_FPGA_Surveillance_System ECE 532 Project
 
+This is a design project for ECE 532 at the University of Toronto. 
+This project aims to create a network surveillance system using the Nexys Video FPGA.
+
+For details of the project implementation, please refer to the docs folder.
+
 ## 1.0 Project Structure
 
 ```
